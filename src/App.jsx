@@ -129,33 +129,6 @@ export default function WeddingCarouselWebsite() {
     }
   };
 
-  const handleFileUpload = (e) => {
-    const files = Array.from(e.target.files || []);
-    
-    files.forEach(file => {
-      if (!file.type.startsWith('image/')) {
-        alert('Please upload only image files');
-        return;
-      }
-
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        const imageUrl = event.target.result;
-        if (uploadType === 'featured') {
-          setUploadedPortraits(prev => [...prev, { image: imageUrl }]);
-        } else {
-          setUploadedGallery(prev => [...prev, { image: imageUrl }]);
-        }
-      };
-      reader.readAsDataURL(file);
-    });
-
-    setShowUploadModal(false);
-    if (fileInputRef.current) {
-      fileInputRef.current.value = '';
-    }
-  };
-
   const showNextImage = () => {
     setSelectedImage((current) => ({
       ...current,
