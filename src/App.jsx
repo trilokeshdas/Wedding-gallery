@@ -38,6 +38,12 @@ const galleryPhotos = [
   { image: '/photos/engagement-optimized/DSC_1789.Edit.jpg' },
   { image: '/photos/engagement-optimized/DSC_1799.Edit.jpg' },
   { image: '/photos/engagement-optimized/DSC_1805.Edit.jpg' },
+  { image: '/photos/engagement-optimized/0.jpg.jpeg' },
+  { image: '/photos/engagement-optimized/DSC_1673.jpg.jpeg' },
+  { image: '/photos/engagement-optimized/DSC_1686.jpg.jpeg' },
+  { image: '/photos/engagement-optimized/DSC_1696.jpg.jpeg' },
+  { image: '/photos/engagement-optimized/DSC_1760.jpg.jpeg' },
+  { image: '/photos/engagement-optimized/DSC_1769.jpg.jpeg' },
 ];
 
 const featuredPortraits = [
